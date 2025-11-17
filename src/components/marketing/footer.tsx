@@ -27,6 +27,10 @@ export function Footer() {
       link: "https://www.claro.com.br/atendimento",
       label: "Suporte Técnico",
     },
+    {
+      link: "https://www.claro.com.br/privacidade/politica-de-privacidade",
+      label: "Política de Privacidade",
+    },
   ];
 
   const atendimento = [
