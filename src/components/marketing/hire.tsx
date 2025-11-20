@@ -71,8 +71,8 @@ export function Hire() {
             O que você pode contratar pelo WhatsApp
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            Você apresenta sua necessidade, e nossa IA mostra as melhores opções
-            para você ou para sua empresa.
+            Você apresenta sua necessidade, e nossa equipe mostra as melhores
+            opções para você ou sua empresa.
           </p>
         </div>
 

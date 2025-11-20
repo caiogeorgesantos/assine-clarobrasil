@@ -10,25 +10,26 @@ export function HowItWorks() {
   const steps = [
     {
       number: "01",
-      title: "Conecte com nossa IA",
+      title: "Fale com nossa equipe",
       description:
-        "Nossa assistente virtual está pronta para te atender 24/7 no WhatsApp",
-      tech: "Inteligência Artificial",
+        "Nossa equipe está pronta para te atender e tirar suas dúvidas pelo WhatsApp.",
+      tech: "Atendimento 24h",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
       number: "02",
       title: "Análise personalizada",
       description:
-        "IA analisa seu perfil e encontra os melhores planos para você",
-      tech: "Machine Learning",
+        "Analisamos sua necessidade e indicamos os melhores planos para você.",
+      tech: "Equipe especializada",
       gradient: "from-purple-500 to-pink-500",
     },
     {
       number: "03",
-      title: "Ativação instantânea",
-      description: "Contratação automatizada e ativação em tempo real",
-      tech: "Automação Digital",
+      title: "Ativação rápida",
+      description:
+        "Cuidamos de toda a contratação e ativação do plano de forma rápida e prática.",
+      tech: "Atendimento Claro",
       gradient: "from-emerald-500 to-teal-500",
     },
   ];
@@ -56,11 +57,11 @@ export function HowItWorks() {
             </span>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Como funciona nossa
-            <span className="text-[#E30613]"> IA</span>
+            Como funciona nosso
+            <span className="text-[#E30613]"> atendimento</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Conheça os serviços Claro, sem burocracia
+            Contratação rápida e sem burocracia.
           </p>
         </div>
 

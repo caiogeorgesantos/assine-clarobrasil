@@ -10,7 +10,7 @@ export function Faq() {
     {
       question: "Como funciona o atendimento via WhatsApp?",
       answer:
-        "Nossa inteligência artificial responde suas dúvidas 24h por dia pelo WhatsApp. Você pode consultar planos, verificar cobertura e até mesmo finalizar sua assinatura.",
+        "Nossa equipe responde suas dúvidas direto pelo WhatsApp. Você pode consultar planos, verificar cobertura e até mesmo finalizar sua assinatura.",
     },
     {
       question: "É seguro contratar pelo WhatsApp?",
@@ -18,14 +18,9 @@ export function Faq() {
         "Sim, totalmente seguro. Utilizamos criptografia de ponta a ponta e todos os processos seguem os padrões de segurança da Claro.",
     },
     {
-      question: "Posso falar com um atendente humano se precisar?",
-      answer:
-        "Claro! Se a IA não conseguir resolver sua dúvida, você será direcionado para um atendente humano especializado.",
-    },
-    {
       question: "Quais planos posso contratar pelo WhatsApp?",
       answer:
-        "Todos os nossos planos estão disponíveis: internet fibra, móvel, TV por assinatura e combos. Nossa IA te ajuda a escolher o ideal.",
+        "Todos os nossos planos estão disponíveis: internet fibra, móvel, TV por assinatura e combos. Tanto para sua residência, quanto para sua empresa.",
     },
     {
       question: "Quanto tempo demora para ativar meu plano?",

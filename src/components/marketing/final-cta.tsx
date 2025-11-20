@@ -14,7 +14,7 @@ export function FinalCTA() {
           Pronto para assinar Claro em minutos?
         </h2>
         <p className="text-xl text-gray-300 mb-8">
-          Nossa IA está online agora e pronta para te atender!
+          Nossa equipe está online agora e pronta para te atender!
         </p>
 
         <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
