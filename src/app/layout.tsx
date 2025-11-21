@@ -1,4 +1,5 @@
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from "@/constants";
+import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
@@ -47,6 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <GoogleTagManager gtmId="AW-818161064" />
       <body className={`${geistSans.variable} antialiased`}>{children}</body>
     </html>
   );
