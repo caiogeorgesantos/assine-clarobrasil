@@ -7,7 +7,7 @@ export function Social() {
       name: "Ana Paula",
       location: "São Paulo, SP",
       rating: 5,
-      text: "Super fácil! Assinei pelo WhatsApp em 5 minutos. A IA da Claro é muito eficiente!",
+      text: "Super fácil! Assinei pelo WhatsApp em 5 minutos. A equipe da Claro é muito eficiente!",
     },
     {
       name: "Carlos Santos",
