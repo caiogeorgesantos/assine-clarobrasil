@@ -60,17 +60,17 @@ export function FloatingButton() {
 
   return (
     <>
-      {/* Versão Desktop - botão arredondado completo */}
-      <div className="hidden md:block fixed bottom-12 right-4 z-[9999]">
+      <div className="fixed bottom-4 md:bottom-12 right-4 z-[9999]">
         <Link
+          id="floating-whatsapp-button"
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-row-reverse items-center justify-center"
         >
           <button
-            className={`${
-              isExpanded ? "w-14 h-14" : "w-16 h-16"
+            className={`w-16 h-16 ${
+              isExpanded ? "md:w-14 md:h-14" : ""
             } bg-[#25D366] transition-all duration-300 rounded-full flex items-center justify-center shadow-lg border-2 border-white drop-shadow-lg drop-shadow-[#25D366]/50 z-10 cursor-pointer`}
             title="Fale conosco pelo WhatsApp"
           >
@@ -80,7 +80,7 @@ export function FloatingButton() {
               alt=""
               width={40}
               height={40}
-              className={`${isExpanded ? "w-8 h-8" : "w-10 h-10"} z-10`}
+              className={`w-10 h-10 ${isExpanded ? "md:w-8 md:h-8" : ""} z-10`}
             />
 
             {/* Badge de notificação mobile */}
@@ -89,10 +89,36 @@ export function FloatingButton() {
             </div>
           </button>
 
-          {/* Versão expandida */}
+          {/* Versão expandida - Mobile */}
           {isExpanded && (
             <div
-              className={`relative bg-[#25D366] rounded-2xl flex flex-col justify-center drop-shadow-lg drop-shadow-[#25D366]/50 w-[277px] -mr-16 -mt-4`}
+              className={`relative bg-[#25D366] rounded-2xl flex md:hidden flex-col justify-center px-4 py-1 pr-20 -mr-14 drop-shadow-lg drop-shadow-[#25D366]/50`}
+            >
+              <span className="text-white text-base font-bold text-left">
+                Desconto Especial
+              </span>
+              <span className="flex items-center justify-start gap-2 text-left">
+                <span className="inline-block h-2 w-2 bg-[#E30613] rounded-full"></span>
+                <span className="text-white font-light text-sm">
+                  Oferta exclusiva hoje
+                </span>
+              </span>
+
+              {/* Botão para fechar a versão expandida */}
+              <button
+                className="absolute -top-2 -left-2 text-white bg-black rounded-full w-5 h-5 flex items-center justify-center text-lg leading-none z-10"
+                onClick={handleCloseExpandedButton}
+              >
+                <X className="w-3 h-3" />
+                <span className="sr-only">Fechar</span>
+              </button>
+            </div>
+          )}
+
+          {/* Versão expandida - Desktop */}
+          {isExpanded && (
+            <div
+              className={`hidden md:flex relative bg-[#25D366] rounded-2xl flex-col justify-center drop-shadow-lg drop-shadow-[#25D366]/50 w-[277px] -mr-16 -mt-4`}
             >
               <span className="flex items-center justify-between border-b border-white/30 px-4 py-2">
                 <span className="flex items-center justify-start gap-2 text-left">
@@ -128,58 +154,6 @@ export function FloatingButton() {
                 className="absolute -top-2 -left-2 text-white bg-black rounded-full w-5 h-5 flex items-center justify-center text-lg leading-none z-10 cursor-pointer"
                 onClick={handleCloseExpandedButton}
                 title="Fechar"
-              >
-                <X className="w-3 h-3" />
-                <span className="sr-only">Fechar</span>
-              </button>
-            </div>
-          )}
-        </Link>
-      </div>
-
-      {/* Versão Mobile - apenas círculo */}
-      <div className="sm:hidden fixed bottom-4 right-4 z-[9999]">
-        <Link
-          href={whatsappLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex flex-row-reverse items-center justify-center"
-        >
-          <button className="w-16 h-16 bg-[#25D366] transition-all duration-300 rounded-full flex items-center justify-center shadow-lg border-2 border-white drop-shadow-lg drop-shadow-[#25D366]/50 z-10">
-            {/* Ícone do WhatsApp */}
-            <Image
-              src="/icon-whatsapp-default.svg"
-              alt=""
-              width={40}
-              height={40}
-              className="w-10 h-10 z-10"
-            />
-
-            {/* Badge de notificação mobile */}
-            <div className="absolute -top-3 -right-2 bg-[#E30613] text-white rounded-full flex items-center justify-center font-bold text-xs w-7 h-7 border-2 border-white z-20">
-              1
-            </div>
-          </button>
-
-          {/* Versão expandida */}
-          {isExpanded && (
-            <div
-              className={`relative bg-[#25D366] rounded-2xl flex flex-col justify-center px-4 py-1 pr-20 -mr-14 drop-shadow-lg drop-shadow-[#25D366]/50`}
-            >
-              <span className="text-white text-base font-bold text-left">
-                Desconto Especial
-              </span>
-              <span className="flex items-center justify-start gap-2 text-left">
-                <span className="inline-block h-2 w-2 bg-[#E30613] rounded-full"></span>
-                <span className="text-white font-light text-sm">
-                  Oferta exclusiva hoje
-                </span>
-              </span>
-
-              {/* Botão para fechar a versão expandida */}
-              <button
-                className="absolute -top-2 -left-2 text-white bg-black rounded-full w-5 h-5 flex items-center justify-center text-lg leading-none z-10"
-                onClick={handleCloseExpandedButton}
               >
                 <X className="w-3 h-3" />
                 <span className="sr-only">Fechar</span>
